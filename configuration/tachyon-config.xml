@@ -5,19 +5,25 @@
   <property>
     <name>tachyon.archive.file</name>
     <description>tachyon archive file</description>
-    <value>tachyon-0.8.0-bin.tar.gz</value>
+    <value>tachyon-0.8.2-bin.tar.gz</value>
+  </property>
+
+  <property require-input="true">
+    <name>tachyon.master.address</name>
+    <description>node where master server is deployed</description>
+    <value>hadoop1</value>
   </property>
 
   <property require-input="true">
     <name>tachyon.underfs.address</name>
     <description>Tachyon UnderFS Address</description>
-    <value>hdfs://0.0.0.0:8020</value>
+    <value>hdfs://hadoop1:8020/tachyon</value>
   </property>
 
   <property>
     <name>tachyon.worker.memory</name>
     <description>Tachyon Worker Memory</description>
-    <value>2GB</value>
+    <value>1GB</value>
   </property>
 
 </configuration>

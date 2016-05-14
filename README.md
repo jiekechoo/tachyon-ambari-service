@@ -11,7 +11,7 @@ Install, start/stop, status, service check functional
 **- Adding tachyon to IOP 4.1 stack**
 ```
 # Clone the service deployer
-git clone https://github.com/chuyqa/tachyon-ambari-service /var/lib/ambari-server/resources/stacks/BigInsights/4.1/services/TACHYON
+git clone https://github.com/jiekechoo/tachyon-ambari-service /var/lib/ambari-server/resources/stacks/BigInsights/4.1/services/TACHYON
 
 ambari-server restart
 
@@ -21,7 +21,7 @@ ambari-server restart
 
 ```
 # Clone the service deployer
-git clone https://github.com/chuyqa/tachyon-ambari-service /var/lib/ambari-server/resources/stacks/HDP/2.3/services/TACHYON
+git clone https://github.com/jiekechoo/tachyon-ambari-service /var/lib/ambari-server/resources/stacks/HDP/2.4/services/TACHYON
 
 ambari-server restart
 
@@ -30,7 +30,7 @@ ambari-server restart
 
 **2. Add service via Ambari ui**
 
-![Add service](https://raw.githubusercontent.com/chuyqa/tachyon-ambari-service/branch-0.8-Deprecated/package/files/add_service.jpg)
+![Add service](https://raw.githubusercontent.com/jiekechoo/tachyon-ambari-service/branch-0.8-Deprecated/package/files/add_service.jpg)
 
 
 **3. Assign a Tachyon Master And Worker nodes.**

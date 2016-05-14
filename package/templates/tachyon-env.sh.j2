@@ -52,6 +52,8 @@
 # fi
 # export TACHYON_CLASSPATH=${TACHYON_CLASSPATH:-${HADOOP_TACHYON_CLASSPATH}}
 
+export JAVA_HOME=/usr/jdk64/jdk1.8.0_60/
+
 if [[ $(uname -s) == Darwin ]]; then
   # Assuming Mac OS X
   export JAVA_HOME=${JAVA_HOME:-$(/usr/libexec/java_home)}
@@ -79,7 +81,6 @@ fi
 export JAVA="${JAVA_HOME}/bin/java"
 export TACHYON_MASTER_ADDRESS={{ tachyon_master }}
 export TACHYON_UNDERFS_ADDRESS={{ underfs_addr}}
-export TACHYON_UNDERFS_HDFS_IMPL=org.apache.hadoop.hdfs.DistributedFileSystem
 export TACHYON_WORKER_MEMORY_SIZE={{ worker_mem }}
 
 export TACHYON_SSH_FOREGROUND=${TACHYON_SSH_FOREGROUND:-"yes"}

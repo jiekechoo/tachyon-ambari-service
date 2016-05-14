@@ -6,7 +6,7 @@
             <name>TACHYON</name>
             <displayName>Tachyon</displayName>
             <comment>Memory Centric Reliable Distributed Storage</comment>
-            <version>0.8.0</version>
+            <version>0.8.2</version>
             <components>
                 <component>
                     <name>TACHYON_MASTER</name>
